@@ -1,3 +1,7 @@
+body {  
+  background: var(--blue);
+}
+
 .start-brand {
   height: 46px;
   width: 187px;
@@ -24,22 +28,4 @@ button {
 
 .main-ilustration {
   height: 312.77px;
-}
-
-@media screen and (max-width: 360px) {
-  body {
-    background: url('../img/Wallpaper-Mobile-01.jpg');
-  }
-}
-
-@media screen and (max-width: 780px) {
-  body {
-    background: url('../img/Wallpaper-Tablet-01.jpg');
-  }
-}
-
-@media screen and (min-width: 780px) {
-  body {
-    background: url('../img/Wallpaper-Desktop-01.jpg');
-  }
 }

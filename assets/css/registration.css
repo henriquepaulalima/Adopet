@@ -1,0 +1,9 @@
+img {
+  height: 36px;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--blue);
+}
