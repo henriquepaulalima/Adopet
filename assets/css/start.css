@@ -2,3 +2,44 @@
   height: 46px;
   width: 187px;
 }
+
+h1 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+button {
+  background: var(--red);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.main-ilustration {
+  height: 312.77px;
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    background: url('../img/Wallpaper-Mobile-01.jpg');
+  }
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    background: url('../img/Wallpaper-Tablet-01.jpg');
+  }
+}
+
+@media screen and (min-width: 780px) {
+  body {
+    background: url('../img/Wallpaper-Desktop-01.jpg');
+  }
+}

@@ -24,3 +24,21 @@ footer p {
   font-size: 1rem;
   font-weight: 400;
 }
+
+@media screen and (max-width: 360px) {
+  body {
+    background: url('../img/Wallpaper-Mobile-02.jpg');
+  }
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    background: url('../img/Wallpaper-Tablet-02.jpg');
+  }
+}
+
+@media screen and (min-width: 780px) {
+  body {
+    background: url('../img/Wallpaper-Desktop-02.jpg');
+  }
+}
