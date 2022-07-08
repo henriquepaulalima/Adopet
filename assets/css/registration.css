@@ -1,4 +1,4 @@
-img {
+main img {
   height: 36px;
 }
 
@@ -6,4 +6,31 @@ p {
   font-size: 1rem;
   font-weight: 400;
   color: var(--blue);
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #737380;
+}
+
+input::placeholder {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #BCBCBC;
+}
+
+input:focus {
+  outline-color:  var(--green);
+}
+
+.show-password {
+  height: 16px;
+}
+
+button {
+  background: var(--red);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
 }
