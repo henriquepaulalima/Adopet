@@ -1,0 +1,39 @@
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--blue);
+}
+
+.pet-img {
+  height: 148px;
+  cursor: pointer;
+}
+
+.pet-info h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.pet-info p {
+  font-size: .8rem;
+  font-weight: 400;
+  color: #737380;
+}
+
+.pet-info address {
+  font-size: .75rem;
+  font-weight: 400;
+  color: #737380;
+}
+
+.contact-owner img {
+  height: 18px;
+}
+
+.contact-owner p {
+  font-size: .6rem;
+  font-weight: 400;
+  color: #737380;
+  cursor: pointer;
+}
