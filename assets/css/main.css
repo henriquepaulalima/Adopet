@@ -9,16 +9,17 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #fff;
-}
-
-header {
-  background: var(--green);
+  background: url('../img/Forma_1.svg') left top no-repeat, url('../img/Forma_2.svg') right 30% no-repeat, #fff;
+  background-size: 295px, 64px;
 }
 
 .user-icon {
   height: 40px;
   width: 40px;
+}
+
+.brand-icon {
+  height: 30px;
 }
 
 footer {

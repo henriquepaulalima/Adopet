@@ -1,0 +1,58 @@
+body {
+  background: url('../img/Forma_1.svg') left top no-repeat, #fff;
+  background-size: 295px, 64px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: url('../img/Forma_1.svg') left top no-repeat, url('../img/Forma_2.svg') right center no-repeat, #fff;
+    background-size: 395px, 64px;
+  }
+
+  p {
+    padding: 5rem 15rem!important;
+  }
+
+  input, textarea  {
+    width: 50vw!important;
+  }
+}
+
+.brand-icon {
+  height: 30px;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--blue);
+  padding: 3rem;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+input, textarea  {
+  width: 80vw;
+}
+
+input::placeholder, textarea::placeholder {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #BCBCBC;
+}
+
+input:focus, textarea:focus {
+  outline-color:  var(--green);
+}
+
+button {
+  background: var(--red);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 1rem 0 10rem;
+}

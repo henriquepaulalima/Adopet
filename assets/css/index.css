@@ -1,0 +1,55 @@
+body {  
+  background: url('../img/Forma_1.svg') left top no-repeat, url('../img/Forma_2.svg') right 30% no-repeat, var(--blue);
+  background-size: 295px, 64px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: url('../img/Forma_1.svg') left top no-repeat, url('../img/Forma_2.svg') right center no-repeat, var(--blue);
+    background-size: 395px, 104px;
+  }
+
+  .main-text {
+    padding: 0 15rem!important;
+  }
+}
+
+.start-brand {
+  height: 46px;
+  width: 187px;
+}
+
+.brand-icon {
+  height: 30px;
+}
+
+h1 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.main-text {
+  padding: 0 3rem;
+}
+
+main a {
+  text-decoration: none;
+}
+
+button {
+  background: var(--red);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.main-ilustration {
+  height: 312.77px;
+}

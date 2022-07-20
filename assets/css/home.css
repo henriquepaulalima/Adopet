@@ -1,3 +1,26 @@
+body {
+  background: url('../img/Forma_1.svg') left top no-repeat, #fff;
+  background-size: 295px, 64px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: url('../img/Forma_1.svg') left top no-repeat, #fff;
+    background-size: 395px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background: url('../img/Forma_1.svg') left top no-repeat, url('../img/Forma_2.svg') right center no-repeat, #fff;
+    background-size: 395px, 64px;
+  }
+}
+
+.brand-icon {
+  height: 30px;
+}
+
 p {
   font-size: 1rem;
   font-weight: 400;
@@ -13,6 +36,10 @@ p {
   font-size: 1rem;
   font-weight: 600;
   color: var(--blue);
+}
+
+.pet-info a {
+  text-decoration: none;
 }
 
 .pet-info p {
