@@ -24,6 +24,7 @@ body {
 
 footer {
   background-color: var(--green);
+  justify-content: center;
 }
 
 footer p {
