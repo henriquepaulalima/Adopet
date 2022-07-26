@@ -14,6 +14,10 @@ body {
   height: 30px;
 }
 
+main {
+  padding: 2rem 0;
+}
+
 main img {
   height: 36px;
 }
@@ -38,6 +42,36 @@ input::placeholder {
 
 input:focus {
   outline-color:  var(--green);
+}
+
+.error {
+  text-align: center !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+  border: 0!important;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.success {
+  text-align: center !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+  border: 0!important;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.error:focus {
+  outline-color: var(--red);
+}
+
+small {
+  font-size: .75rem;
+  font-weight: 400;
+  color: var(--red);
 }
 
 button {

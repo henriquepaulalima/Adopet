@@ -30,22 +30,26 @@
       <p class="text-center px-3">Ainda não tem cadastro?</p>
       <p class="text-center px-3">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
     </div>
-    <form action="home.html" class="d-flex flex-column align-items-center px-3">
+    <form action="home.html" class="d-flex flex-column align-items-center px-3" id="registration_form">
       <div class="d-flex flex-column my-3">
         <label for="email" class="text-center">Email</label>
-        <input id="email" type="text" class="text-center px-4 py-2 border-0 shadow" placeholder="Escolha seu melhor email">
+        <input id="email" type="text" class="text-center px-4 py-2 border-0 shadow" placeholder="Escolha seu melhor email" name="email_text">
+        <small class="text-center py-1"></small>
       </div>
       <div class="d-flex flex-column my-3">
         <label for="name" class="text-center">Nome</label>
-        <input id="name" type="text" class="text-center px-4 py-2 border-0 shadow" placeholder="Digite seu nome completo">
+        <input id="name" type="text" class="text-center px-4 py-2 border-0 shadow" placeholder="Digite seu nome completo" name="name_text">
+        <small class="text-center py-1"></small>
       </div>
       <div class="d-flex flex-column my-3">
         <label for="password" class="text-center">Senha</label>
-        <input id="password" type="password" class="text-center px-4 py-2 border-0 shadow" placeholder="Crie uma senha">        
+        <input id="password" type="password" class="text-center px-4 py-2 border-0 shadow" placeholder="Crie uma senha" name="password_text">
+        <small class="text-center py-1"></small>
       </div>
       <div class="d-flex flex-column my-3">
         <label for="check_password" class="text-center">Confirmar senha</label>
-        <input id="check_password" type="password" class="text-center px-4 py-2 border-0 shadow" placeholder="Repita a senha criada acima">        
+        <input id="check_password" type="password" class="text-center px-4 py-2 border-0 shadow" placeholder="Repita a senha criada acima" name="confirmation_password_text">
+        <small class="text-center py-1"></small>
       </div>
       <button type="submit" class="px-5 py-2 my-4 border-0 rounded">Cadastrar</button>
     </form>
@@ -61,6 +65,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
     integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
     crossorigin="anonymous"></script>
+  <script src="assets/js/validate.registration.js"></script>
 </body>
 
 </html>
