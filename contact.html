@@ -10,19 +10,21 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/contato.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
 </head>
 
 <body>
   <header>
     <nav class="navbar d-flex">
       <div class="d-flex m-3">
-        <a href="" class="px-3"><img src="assets/img/Logo-02.png"  class="brand-icon d-none d-md-block" alt="Ícone do Adopet"></a>
+        <a href="" class="px-3"><img src="assets/img/Logo-02.png" class="brand-icon d-none d-md-block"
+            alt="Ícone do Adopet"></a>
         <a href="" class="px-3"><img src="assets/img/Casa.png" alt="Ícone de casa"></a>
         <a href="" class="px-3"><img src="assets/img/Mensagens.png" alt="Ícone de mensagens"></a>
       </div>
       <div class="m-3">
-        <a href="profile.html" class="px-3"><img src="assets/img/Usuário.png" class="user-icon" alt="Ícone dos usuários"></a>
+        <a href="profile.html" class="px-3"><img src="assets/img/Usuário.png" class="user-icon"
+            alt="Ícone dos usuários"></a>
       </div>
     </nav>
   </header>
@@ -31,22 +33,30 @@
     <div class="d-flex flex-column justify-content-center align-items-center">
       <p class="text-center">Envie uma mensagem para a pessoa ou instituição que está cuidado do animal:</p>
     </div>
-    <form class="d-flex flex-column align-items-center px-3">
+    <form class="d-flex flex-column align-items-center px-3" id="contact_form">
       <div class="d-flex flex-column my-3">
         <label for="name" class="text-start">Nome</label>
-        <input id="name" type="text" class="text-start px-4 py-2 border-0 shadow" placeholder="Insira seu nome completo">
-      </div>    
+        <input id="name" type="text" class="text-start px-4 py-2 border-0 shadow" placeholder="Insira seu nome completo"
+          name="name">
+        <small class="text-center py-1"></small>
+      </div>
       <div class="d-flex flex-column my-3">
         <label for="phone" class="text-start">Telefone</label>
-        <input id="phone" type="text" class="text-start px-4 py-2 border-0 shadow" placeholder="Insira seu telefone e/ou whatsapp">
+        <input id="phone" type="text" class="text-start px-4 py-2 border-0 shadow"
+          placeholder="Insira seu telefone e/ou whatsapp" name="phone" onkeyup="maskPhone(this)" maxlength="15">
+        <small class="text-center py-1"></small>
       </div>
       <div class="d-flex flex-column my-3">
         <label for="pet-name" class="text-start">Nome do animal</label>
-        <input id="pet-name" type="text" class="text-start px-4 py-2 border-0 shadow" placeholder="Por qual animal você se interessou?">
+        <input id="pet-name" type="text" class="text-start px-4 py-2 border-0 shadow"
+          placeholder="Por qual animal você se interessou?" name="pet_name">
+        <small class="text-center py-1"></small>
       </div>
       <div class="d-flex flex-column my-3">
         <label for="message" class="text-start">Mensagem</label>
-        <textarea id="message" type="text" class="text-start px-4 py-2 border-0 shadow" placeholder="Escreva sua mensagem" rows="5"></textarea>
+        <textarea id="message" type="text" class="text-start px-4 py-2 border-0 shadow"
+          placeholder="Escreva sua mensagem" name="message" rows="5"></textarea>
+        <small class="text-center py-1"></small>
       </div>
       <button type="submit" class="px-5 py-2 border-0 rounded">Enviar</button>
     </form>
@@ -62,6 +72,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
     integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
     crossorigin="anonymous"></script>
+  <script src="assets/js/validate-contact.js"></script>
+  <script src="assets/js/mask-contact-phone.js"></script>
 </body>
 
 </html>
