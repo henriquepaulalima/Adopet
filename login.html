@@ -29,14 +29,16 @@
       <img src="assets/img/Logo-03.png" class="start-brand my-4" alt="Logo Adopet">
       <p class="text-center px-3">Já tem conta? Faça seu login:</p>
     </div>
-    <form action="home.html" class="d-flex flex-column align-items-center px-3">
+    <form action="home.html" class="d-flex flex-column align-items-center px-3" id="login_form">
       <div class="d-flex flex-column my-3">
-        <label for="email" class="text-center">Email</label>
-        <input id="email" type="text" class="text-center px-4 py-2 border-0 shadow" placeholder="Escolha seu melhor email">
+        <label for="email" class="text-center" >Email</label>
+        <input id="email" type="text" class="text-center px-4 py-2 border-0 shadow" placeholder="Escolha seu melhor email" name="email_text">
+        <small class="text-center py-1"></small>
       </div>    
       <div class="d-flex flex-column my-3">
         <label for="password" class="text-center">Senha</label>
-        <input id="password" type="password" class="text-center px-4 py-2 border-0 shadow" placeholder="Crie uma senha">        
+        <input id="password" type="password" class="text-center px-4 py-2 border-0 shadow" placeholder="Crie uma senha" name="password_text" title="Sua senha deve conter no mínimo 8 caracteres, pelo menos uma letra maiúscula, uma letra minúscula e um número">
+        <small class="text-center py-1"></small>
         <p class="text-center forgot-password p-3">Esqueci minha senha</p>
       </div>
       <button type="submit" class="px-5 py-2 border-0 rounded">Entrar</button>
@@ -53,6 +55,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
     integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
     crossorigin="anonymous"></script>
+  <script src="assets/js/validate-login.js"></script>
 </body>
 
 </html>
