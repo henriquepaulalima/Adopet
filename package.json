@@ -1,0 +1,26 @@
+{
+  "name": "adopet",
+  "version": "1.0.0",
+  "description": "A pet adoption app",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start-app\" \"npm run start-data\"",
+    "start-app": "node assets/js/server.js",
+    "start-data": "node assets/js/data-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henriquepaulalima/adopet.git"
+  },
+  "author": "Henrique P. Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henriquepaulalima/adopet/issues"
+  },
+  "homepage": "https://github.com/henriquepaulalima/adopet#readme",
+  "dependencies": {
+    "concurrently": "^7.3.0",
+    "express": "^4.18.1",
+    "json-server": "^0.17.0"
+  }
+}
