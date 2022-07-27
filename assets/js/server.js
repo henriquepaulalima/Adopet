@@ -1,3 +1,4 @@
+const http = require('http');
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -8,4 +9,6 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "../../index.html"));
 })
 
-app.listen(5000, () => console.log("Server is running..."));
+let server = http.createServer(app);
+
+server.listen(0, () => console.log(`Server is running... on ${server.address().port}`));
