@@ -1,4 +1,4 @@
-petsURL = "http://localhost:3000/pets";
+petsURL = "http://localhost:3030/pets";
 
 const petsList = document.getElementById("pets_list");
 
