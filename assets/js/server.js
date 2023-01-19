@@ -11,4 +11,4 @@ app.get("/", function (req, res) {
 
 let server = http.createServer(app);
 
-server.listen(0, () => console.log(`Server is running... on ${server.address().port}`));
+server.listen(0, () => console.log(`Server is running... on http://localhost:${server.address().port}`));
